@@ -1,0 +1,33 @@
+\subsection{Measured Processing and Simulated Delivery}
+
+The completed evaluation contains 1008 latency observations per method and 1071 delivery trials per method and scenario, across 3 simulation replicates on the same runtime. Pilot and warm-up observations are excluded.
+
+All reported successes require both reconstructed ciphertext equality and candidate-key equality. This is not an implemented key-confirmation protocol. Loss parameters and arrival orders are synthetic; the model does not measure propagation, fragmentation, retransmission, or an end-to-end deadline.
+
+\input{tables/benchmark_table.tex}
+
+Timing intervals use circular block resampling within replicate and execution segment, with a primary block length of 14 and sensitivity lengths 7 and 28. They are conditional on this runtime and weak-dependence assumptions, not simultaneous confidence guarantees or evidence of equivalence. Per-replicate results and sensitivity intervals are retained in the analysis archive.
+
+The paired unconditional processing difference (GATL-uniform minus Shamir (3,5)) is 0.2073 ms, with pointwise 95\% interval [-0.1752, 0.6220] ms. These implementation-specific observations do not establish a universal speed advantage.
+
+The paired unconditional processing difference (GATL-gateway minus RS (2,5) + policy check) is 24.8085 ms, with pointwise 95\% interval [24.3830, 25.2611] ms. These implementation-specific observations do not establish a universal speed advantage.
+
+Raw-versus-authenticated measurements were collected in separate, nonrandomized execution phases with fresh ciphertexts. Their difference is descriptive and cannot be attributed solely to HMAC. Component residuals also include serialization, checking, state handling, and instrumentation.
+
+The memory pass reports Python-traced peak allocation during session setup and send/receive, including harness and Python allocations around decapsulation. It excludes preconstructed codecs, prior KEM key setup, and untraced native allocations; it is not RSS or device-memory consumption.
+
+Provisioning remains an in-process trusted test setup. No KAT/ACVP certification, active-composition theorem, real-network latency, energy result, cache ablation, or independent external reproduction is established by these measurements.
+
+\begin{figure*}[t]
+
+\centering
+
+\includegraphics[width=0.48\textwidth]{figures/iid_reliability.pdf}\hfill
+
+\includegraphics[width=0.48\textwidth]{figures/budget_reliability.pdf}
+
+\caption{Simulated one-shot delivery: IID loss sweep (left) and frozen application-byte budgets at IID 20\% loss (right). Markers are observed ciphertext/key matches with pointwise 95\% Wilson intervals; dashed curves are analytical values, not measurements. Methods with identical received-set rules can overlap. No propagation or size-dependent erasure model is included.}
+
+\label{fig:measured-gatl-delivery}
+
+\end{figure*}

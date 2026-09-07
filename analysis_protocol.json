@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "resamples": 2000,
+  "confidence": 0.95,
+  "seed": 2026090511,
+  "block_length": 14,
+  "sensitivity_block_lengths": [
+    7,
+    28
+  ],
+  "declared_when": "after_data_collection_before_this_cell_reads_timing_values_not_preregistered",
+  "timing_ci": "circular_block_percentile_within_replicate_segment_contiguous_trial_runs",
+  "scope": "conditional_on_observed_runtime_segments_not_external_machine_population",
+  "conditional_metrics": "resample_all_trials_then_select_success_or_failure_do_not_zero_impute",
+  "reliability_ci": "pointwise_95_percent_Wilson_independent_simulation_trials_within_each_scenario",
+  "comparisons": "paired_trace_keys_no_pooling_correlated_scenarios_methods_or_budgets",
+  "no_multiple_comparison_control": true,
+  "equivalence_tests": false,
+  "raw_ablation": "descriptive_only_phase_confounded_not_pure_authentication_cost",
+  "bootstrap_assumptions": "local_stationarity_and_weak_dependence_not_guaranteed_by_three_replicates",
+  "empty_condition": "null_no_fabricated_zero",
+  "p99": "descriptive_only_no_tail_CI_claim",
+  "unsupported_metrics": [
+    "pure_MAC",
+    "solver",
+    "combine",
+    "RSS",
+    "energy",
+    "real_network_latency"
+  ],
+  "analysis_versions": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.0"
+  }
+}

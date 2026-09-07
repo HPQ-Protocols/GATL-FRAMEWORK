@@ -1,0 +1,5 @@
+baseline,candidate,ci_method,block_length,bootstrap_valid,bootstrap_requested,strata,strata_shorter_than_block,mean_ci_low,mean_ci_high,median_ci_low,median_ci_high,p95_ci_low,p95_ci_high
+shamir_3_5,gatl_uniform_3_5,stratified_circular_block_percentile,7,2000,2000,3,0,-0.2281574832341269,0.6359398568452375,0.060778,0.24449744999999978,8.559498141250002,14.599866647499983
+shamir_3_5,gatl_uniform_3_5,stratified_circular_block_percentile,28,2000,2000,3,0,-0.14522597943948404,0.5912249151041665,0.074923,0.237821,8.702162,14.344748849999997
+rs_2_5_gateway_check,gatl_gateway,stratified_circular_block_percentile,7,2000,2000,3,0,24.35870653142361,25.279515269171625,21.753911000000002,22.244174,42.453134,45.614136249999994
+rs_2_5_gateway_check,gatl_gateway,stratified_circular_block_percentile,28,2000,2000,3,0,24.40809847767857,25.22346429389881,21.759115825,22.237376,42.9,45.462605
