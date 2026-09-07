@@ -1,0 +1,36 @@
+{
+  "algorithm": "ML-KEM-768",
+  "backend": "pqcrypto",
+  "benchmark_ready": false,
+  "files": [
+    {
+      "distribution_relative_path": "pqcrypto/_kem/ml_kem_768.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "047db7b7b9e913951dcc29363596f7a4a7e398cc7f1b057660a75daebe422401"
+    },
+    {
+      "distribution_relative_path": "pqcrypto/_kem/ml_kem_768.cpython-311-x86_64-linux-gnu.so",
+      "sha256": "c1d7949340fa3c59432e403ee3d75231a091e544d002d314119d9432dcd824db"
+    },
+    {
+      "distribution_relative_path": "pqcrypto/_kem/ml_kem_768.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "ec7d74591ec4c08b45c9e0149d7e638d5921bc31a915ebd94c2d80145a927abc"
+    },
+    {
+      "distribution_relative_path": "pqcrypto/_kem/ml_kem_768.cpython-313-x86_64-linux-gnu.so",
+      "sha256": "983269e34360e29a260da03a1be858b2343f8e6d709dd07058d5b5e6638a08bf"
+    },
+    {
+      "distribution_relative_path": "pqcrypto/_kem/ml_kem_768.cpython-39-x86_64-linux-gnu.so",
+      "sha256": "1f2ac71df63edca795524dc9166eb1848e44616ec4012243398e27fbb3966f07"
+    },
+    {
+      "distribution_relative_path": "pqcrypto/kem/ml_kem_768.py",
+      "sha256": "f913ac0545c7f2c877a3f29003060f0ffc846d996c9b2fd34fa5d15c15273a62"
+    }
+  ],
+  "interface": "Python_CFFI",
+  "public_key_encoding": "FIPS203_raw_1184_bytes",
+  "randomness": "backend_system_randomness_no_test_seed",
+  "secret_key_encoding": "expanded_raw_2400_bytes",
+  "version": "0.3.4"
+}

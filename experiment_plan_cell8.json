@@ -1,0 +1,577 @@
+{
+  "authenticated_registry_sha256": "7e7e4294c75853f9e4eff0fbd5d0cc429988f4a1cbeba84949c9183d199c03ef",
+  "backend_manifest_sha256": "d28b656d4fad31f9905c883da02eea75c7d07e8691d3c5efefd0269e309f8f72",
+  "byte_budget": {
+    "allocation": "exhaustive_static_send_subset_before_any_measured_outcomes",
+    "allocations": {
+      "1320": {
+        "gatl_gateway": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        },
+        "gatl_uniform_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        },
+        "native": {
+          "analytical_design_success": 0.8000000000000002,
+          "application_bytes": 1320,
+          "send_mask": 1
+        },
+        "replication": {
+          "analytical_design_success": 0.8000000000000002,
+          "application_bytes": 1320,
+          "send_mask": 1
+        },
+        "rs_2_5_gateway_check": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        },
+        "rs_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        },
+        "shamir_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        }
+      },
+      "2640": {
+        "gatl_gateway": {
+          "analytical_design_success": 0.6400000000000001,
+          "application_bytes": 2640,
+          "send_mask": 3
+        },
+        "gatl_uniform_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        },
+        "native": {
+          "analytical_design_success": 0.8000000000000002,
+          "application_bytes": 1320,
+          "send_mask": 1
+        },
+        "replication": {
+          "analytical_design_success": 0.9600000000000001,
+          "application_bytes": 2640,
+          "send_mask": 3
+        },
+        "rs_2_5_gateway_check": {
+          "analytical_design_success": 0.7680000000000001,
+          "application_bytes": 2328,
+          "send_mask": 7
+        },
+        "rs_3_5": {
+          "analytical_design_success": 0.8192000000000002,
+          "application_bytes": 2380,
+          "send_mask": 15
+        },
+        "shamir_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        }
+      },
+      "2975": {
+        "gatl_gateway": {
+          "analytical_design_success": 0.6400000000000001,
+          "application_bytes": 2640,
+          "send_mask": 3
+        },
+        "gatl_uniform_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        },
+        "native": {
+          "analytical_design_success": 0.8000000000000002,
+          "application_bytes": 1320,
+          "send_mask": 1
+        },
+        "replication": {
+          "analytical_design_success": 0.9600000000000001,
+          "application_bytes": 2640,
+          "send_mask": 3
+        },
+        "rs_2_5_gateway_check": {
+          "analytical_design_success": 0.7680000000000001,
+          "application_bytes": 2328,
+          "send_mask": 7
+        },
+        "rs_3_5": {
+          "analytical_design_success": 0.9420800000000001,
+          "application_bytes": 2975,
+          "send_mask": 31
+        },
+        "shamir_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        }
+      },
+      "3880": {
+        "gatl_gateway": {
+          "analytical_design_success": 0.6400000000000001,
+          "application_bytes": 2640,
+          "send_mask": 3
+        },
+        "gatl_uniform_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        },
+        "native": {
+          "analytical_design_success": 0.8000000000000002,
+          "application_bytes": 1320,
+          "send_mask": 1
+        },
+        "replication": {
+          "analytical_design_success": 0.9600000000000001,
+          "application_bytes": 2640,
+          "send_mask": 3
+        },
+        "rs_2_5_gateway_check": {
+          "analytical_design_success": 0.7987200000000001,
+          "application_bytes": 3880,
+          "send_mask": 31
+        },
+        "rs_3_5": {
+          "analytical_design_success": 0.9420800000000001,
+          "application_bytes": 2975,
+          "send_mask": 31
+        },
+        "shamir_3_5": {
+          "analytical_design_success": 0,
+          "application_bytes": 0,
+          "send_mask": 0
+        }
+      },
+      "3960": {
+        "gatl_gateway": {
+          "analytical_design_success": 0.7680000000000001,
+          "application_bytes": 3960,
+          "send_mask": 7
+        },
+        "gatl_uniform_3_5": {
+          "analytical_design_success": 0.5120000000000001,
+          "application_bytes": 3960,
+          "send_mask": 7
+        },
+        "native": {
+          "analytical_design_success": 0.8000000000000002,
+          "application_bytes": 1320,
+          "send_mask": 1
+        },
+        "replication": {
+          "analytical_design_success": 0.9920000000000001,
+          "application_bytes": 3960,
+          "send_mask": 7
+        },
+        "rs_2_5_gateway_check": {
+          "analytical_design_success": 0.7987200000000001,
+          "application_bytes": 3880,
+          "send_mask": 31
+        },
+        "rs_3_5": {
+          "analytical_design_success": 0.9420800000000001,
+          "application_bytes": 2975,
+          "send_mask": 31
+        },
+        "shamir_3_5": {
+          "analytical_design_success": 0.5120000000000001,
+          "application_bytes": 3960,
+          "send_mask": 7
+        }
+      },
+      "6600": {
+        "gatl_gateway": {
+          "analytical_design_success": 0.7987200000000001,
+          "application_bytes": 6600,
+          "send_mask": 31
+        },
+        "gatl_uniform_3_5": {
+          "analytical_design_success": 0.9420800000000001,
+          "application_bytes": 6600,
+          "send_mask": 31
+        },
+        "native": {
+          "analytical_design_success": 0.8000000000000002,
+          "application_bytes": 1320,
+          "send_mask": 1
+        },
+        "replication": {
+          "analytical_design_success": 0.99968,
+          "application_bytes": 6600,
+          "send_mask": 31
+        },
+        "rs_2_5_gateway_check": {
+          "analytical_design_success": 0.7987200000000001,
+          "application_bytes": 3880,
+          "send_mask": 31
+        },
+        "rs_3_5": {
+          "analytical_design_success": 0.9420800000000001,
+          "application_bytes": 2975,
+          "send_mask": 31
+        },
+        "shamir_3_5": {
+          "analytical_design_success": 0.9420800000000001,
+          "application_bytes": 6600,
+          "send_mask": 31
+        }
+      }
+    },
+    "budgets": [
+      1320,
+      2640,
+      2975,
+      3880,
+      3960,
+      6600
+    ],
+    "design_scenario": "iid_p20",
+    "encoder_cost": "encode_original_profile_charge_full_encoding_even_when_not_all_packets_sent",
+    "measured_budget_trials_completed": false,
+    "packet_sizes": {
+      "gatl_gateway": {
+        "E1": 1320,
+        "E2": 1320,
+        "G1": 1320,
+        "L1": 1320,
+        "L2": 1320
+      },
+      "gatl_uniform_3_5": {
+        "E1": 1320,
+        "E2": 1320,
+        "G1": 1320,
+        "L1": 1320,
+        "L2": 1320
+      },
+      "native": {
+        "G1": 1320
+      },
+      "replication": {
+        "E1": 1320,
+        "E2": 1320,
+        "G1": 1320,
+        "L1": 1320,
+        "L2": 1320
+      },
+      "rs_2_5_gateway_check": {
+        "E1": 776,
+        "E2": 776,
+        "G1": 776,
+        "L1": 776,
+        "L2": 776
+      },
+      "rs_3_5": {
+        "E1": 595,
+        "E2": 595,
+        "G1": 595,
+        "L1": 595,
+        "L2": 595
+      },
+      "shamir_3_5": {
+        "E1": 1320,
+        "E2": 1320,
+        "G1": 1320,
+        "L1": 1320,
+        "L2": 1320
+      }
+    },
+    "scope": "fixed_five_node_one_packet_per_node_no_recoding_or_retries_not_universal_optimum",
+    "size_provenance": "serialization_length_fixture_no_KEM_or_network_execution",
+    "unit": "serialized_application_bytes_including_headers_and_HMAC_not_link_wire_bytes"
+  },
+  "channel_model": {
+    "arrival_order": "shared_random_permutation_no_arrival_times",
+    "control_channel_bytes": null,
+    "cross_scenario_coupling": "same_link_uniforms_common_random_numbers_not_independent_samples",
+    "deadline_handling": "logical_clock_zero_for_one_shot_delivery_not_a_wall_clock_deadline_experiment",
+    "deadline_ms": null,
+    "failures": "independent_across_trials_shared_risk_within_trial",
+    "feedback_channel_modeled": false,
+    "lower_layer_wire_bytes": null,
+    "matched_marginals": "residual_p_i=1-(1-target_p_i)/product(1-group_q)",
+    "mtu_bytes": null,
+    "mtu_fragmentation_modeled": false,
+    "parameter_provenance": "declared_synthetic_scenarios_not_measured_network_parameters",
+    "propagation_latency_ms": null,
+    "retry_policy": "one_shot_no_retransmissions",
+    "size_independent_erasures": true,
+    "unit": "one_atomic_application_packet_per_logical_node"
+  },
+  "ciphertext_bytes": 1088,
+  "final_sampling": {
+    "budget_trials": null,
+    "independent_replicates": null,
+    "latency_blocks": null,
+    "loss_trials_per_scenario": null,
+    "rule": "declare_from_pilot_precision_and_runtime_before_full_measurement"
+  },
+  "generator": "Generator(PCG64(SeedSequence(SHA256_domain_separated_words)))",
+  "gf256_sha256": "a38291cde107290b7f1f73856c99db46fd55117b28566c32db4f431c0cf3f6cc",
+  "input_hashes": {
+    "authentication": "e52b65dd3a6cdfadff9b3d645de681df8043599f56ecd1646c7d848b05066b56",
+    "baselines": "ae3493d2fb2800e5fa1ef1ea7f87073388928e8b5645bc24951f990df6e30bcf",
+    "kem": "75c7dbea5ee2ed851594d1614ff0886d88f4980ba94364a710fc707a5b121be2",
+    "sharing": "98a6158c9c6666bf229455dcda7ab80ca5e02568ba827629f4166b773eb12b34"
+  },
+  "methods": [
+    "native",
+    "replication",
+    "rs_3_5",
+    "shamir_3_5",
+    "gatl_uniform_3_5",
+    "gatl_gateway",
+    "rs_2_5_gateway_check"
+  ],
+  "nodes": [
+    "G1",
+    "L1",
+    "L2",
+    "E1",
+    "E2"
+  ],
+  "numpy_version": "2.1.3",
+  "pilot": {
+    "latency_blocks": 64,
+    "latency_scenario": "iid_p20",
+    "loss_diagnostic_scenarios": [
+      "iid_p00",
+      "iid_p20",
+      "iid_p60",
+      "heterogeneous_example",
+      "shared_risk_matched_p20"
+    ],
+    "loss_diagnostic_trials_per_scenario": 32,
+    "publish_as_final_results": false,
+    "replicate": 0,
+    "trace_trials_per_scenario": 64,
+    "warmup_blocks": 14
+  },
+  "runner_contract": {
+    "ablation": "raw_vs_authenticated_separate_labelled_experiment_never_pooled",
+    "cache": "none_for_all_decoders_constructor_precomputation_disclosed",
+    "common_inputs": "same_received_mask_arrival_order_and_ciphertext_per_paired_block",
+    "components": "measure_supported_boundaries_label_residual_overheads_unsupported_components_null",
+    "cryptographic_randomness": "fresh_system_randomness_never_seed_from_channel_trace",
+    "end_to_end": "separate_measurement_if_claimed_not_sum_paired_block_wall_clock_gaps",
+    "execution_order": "use_saved_trace_row_order_interleaving_scenarios_and_methods",
+    "failures": "record_all_trials_failed_work_and_rejection_statuses_no_zero_imputation",
+    "kem": "shared_encapsulation_outside_transport_timer_time_KEM_separately",
+    "method_order": "shuffled_rotations_balanced_positions_every_seven_trials",
+    "oracle_usage": "sanity_check_only_never_replace_decoding_with_policy_boolean",
+    "packet_transmission": "count_all_scheduled_packets_even_after_receiver_releases_early",
+    "profiling": "memory_in_separate_pass_not_in_latency_timer",
+    "receiver": "actual_Cell6_HMAC_state_and_Cell7_VerifiedKEMReceiver",
+    "setup": "outside_steady_state_timer_record_separately_including_codec_and_epoch_setup",
+    "statistics": "paired_differences_within_trace_key_no_pooling_correlated_scenarios_or_budgets",
+    "success": "received_buffers_Crec_equals_C_and_candidate_key_equals_sender_key",
+    "timer": "perf_counter_ns_processing_only_no_sleep_no_simulated_delay_added",
+    "trace_key": [
+      "phase",
+      "replicate",
+      "trial_id",
+      "scenario_id"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "iid_p00",
+      "marginal_loss": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p05",
+      "marginal_loss": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p10",
+      "marginal_loss": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p15",
+      "marginal_loss": [
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p20",
+      "marginal_loss": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p25",
+      "marginal_loss": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p30",
+      "marginal_loss": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p35",
+      "marginal_loss": [
+        0.35,
+        0.35,
+        0.35,
+        0.35,
+        0.35
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p40",
+      "marginal_loss": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p45",
+      "marginal_loss": [
+        0.45,
+        0.45,
+        0.45,
+        0.45,
+        0.45
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p50",
+      "marginal_loss": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p55",
+      "marginal_loss": [
+        0.55,
+        0.55,
+        0.55,
+        0.55,
+        0.55
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "iid_p60",
+      "marginal_loss": [
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "heterogeneous_example",
+      "marginal_loss": [
+        0.1,
+        0.25,
+        0.35,
+        0.15,
+        0.2
+      ],
+      "risk_groups": []
+    },
+    {
+      "id": "shared_risk_matched_p20",
+      "marginal_loss": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "risk_groups": [
+        {
+          "failure_probability": 0.1,
+          "id": "gateway_satellite_domain",
+          "nodes": [
+            "G1",
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "failure_probability": 0.1,
+          "id": "edge_domain",
+          "nodes": [
+            "E1",
+            "E2"
+          ]
+        }
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "seeds": {
+    "channel": 2026,
+    "method_order": 2027
+  },
+  "status": "pilot_design_not_final_sample_size",
+  "trace_source_sha256": "135cdb409a382eceb882568a214dd5c48f03c04fef1418e38ba6adbd62a18255"
+}

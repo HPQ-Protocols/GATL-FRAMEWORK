@@ -1,0 +1,187 @@
+{
+  "field": {
+    "modulus": "0x11B",
+    "order": 256
+  },
+  "profiles": {
+    "gatl_gateway": {
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "nodes": [
+        "G1",
+        "L1",
+        "L2",
+        "E1",
+        "E2"
+      ],
+      "payload_order": "row_index_then_byte_index",
+      "row_to_node": [
+        "G1",
+        "L1",
+        "L2",
+        "E1",
+        "E2"
+      ],
+      "rule": {
+        "groups": [
+          [
+            "G1"
+          ],
+          [
+            "L1",
+            "L2",
+            "E1",
+            "E2"
+          ]
+        ],
+        "kind": "all_groups_present"
+      },
+      "scope": "primary_comparison",
+      "target": [
+        1,
+        0
+      ]
+    },
+    "gatl_gateway_redundant": {
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "nodes": [
+        "G1",
+        "G2",
+        "L2",
+        "E1",
+        "E2"
+      ],
+      "payload_order": "row_index_then_byte_index",
+      "row_to_node": [
+        "G1",
+        "G2",
+        "L2",
+        "E1",
+        "E2"
+      ],
+      "rule": {
+        "groups": [
+          [
+            "G1",
+            "G2"
+          ],
+          [
+            "L2",
+            "E1",
+            "E2"
+          ]
+        ],
+        "kind": "all_groups_present"
+      },
+      "scope": "policy_redundancy_variant",
+      "target": [
+        1,
+        0
+      ]
+    },
+    "gatl_uniform_3_5": {
+      "evaluation_points": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "matrix": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          16
+        ],
+        [
+          1,
+          5,
+          17
+        ]
+      ],
+      "nodes": [
+        "G1",
+        "L1",
+        "L2",
+        "E1",
+        "E2"
+      ],
+      "payload_order": "row_index_then_byte_index",
+      "row_to_node": [
+        "G1",
+        "L1",
+        "L2",
+        "E1",
+        "E2"
+      ],
+      "rule": {
+        "kind": "threshold",
+        "threshold": 3
+      },
+      "scope": "primary_comparison",
+      "target": [
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  "schema_version": 1,
+  "status": "algebraic_profiles_only_wire_format_pending"
+}
