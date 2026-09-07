@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "status": "draft_not_ready_for_benchmark",
+  "kem": {
+    "algorithm": "ML-KEM-768",
+    "ciphertext_bytes": 1088,
+    "backend": null,
+    "measurement_mode": null,
+    "allow_fake_kem_fallback": false
+  },
+  "field": {
+    "order": 256,
+    "modulus": "0x11B"
+  },
+  "methods": [
+    "native",
+    "replication",
+    "rs_3_5",
+    "shamir_3_5",
+    "gatl_uniform_3_5",
+    "gatl_gateway",
+    "rs_2_5_gateway_check"
+  ],
+  "profiles": {
+    "registry": "artifacts/policy_registry.json",
+    "validation_completed": true,
+    "registry_sha256": "1dc6c3fbbf264e1f7a9ffc0532b7d86cf2f2b182c47db9eb65e9bbe281425102"
+  },
+  "authentication": {
+    "algorithm": "HMAC-SHA256",
+    "tag_bytes": 32,
+    "key_provisioning": null,
+    "session_state_implementation": null
+  },
+  "network": {
+    "reference_loss_rate": 0.2,
+    "model": null,
+    "loss_grid": null,
+    "shared_risk_groups": null,
+    "mtu_bytes": null,
+    "deadline_ms": null,
+    "retry_policy": null
+  },
+  "experiments": {
+    "channel_seed": 2026,
+    "method_order_seed": 2027,
+    "cryptographic_randomness": "system_csprng_unseeded",
+    "latency_trials": null,
+    "warmup_trials": null,
+    "loss_trials": null,
+    "independent_runs": null,
+    "cache_mode": null
+  },
+  "wire_format": {
+    "serialization": null,
+    "header_bytes": null
+  },
+  "sharing": {
+    "implementation": "reference_python_lsss",
+    "source": "src/gatl_sharing.py",
+    "source_sha256": "98a6158c9c6666bf229455dcda7ab80ca5e02568ba827629f4166b773eb12b34",
+    "randomness": "secrets.token_bytes",
+    "payload_order": "row_index_then_byte_index",
+    "codec_cache_mode": "none",
+    "raw_payload_tests_completed": true,
+    "provides_authentication": false
+  }
+}

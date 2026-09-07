@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "status": "draft_not_ready_for_benchmark",
+  "kem": {
+    "algorithm": "ML-KEM-768",
+    "ciphertext_bytes": 1088,
+    "backend": "pqcrypto",
+    "measurement_mode": "correctness_only_not_timed",
+    "allow_fake_kem_fallback": false,
+    "backend_version": "0.3.4",
+    "source": "src/gatl_mlkem.py",
+    "source_sha256": "75c7dbea5ee2ed851594d1614ff0886d88f4980ba94364a710fc707a5b121be2",
+    "backend_manifest": "artifacts/mlkem_backend.json",
+    "backend_manifest_sha256": "d28b656d4fad31f9905c883da02eea75c7d07e8691d3c5efefd0269e309f8f72",
+    "correctness_report": "logs/cell7_checks_e19f2d9d29a74df2a6cfd1ab0dd50d23.json",
+    "uses_real_mlkem": true,
+    "public_key_bytes": 1184,
+    "shared_key_bytes": 32,
+    "kemkid_rule": "SHA256_of_raw_ML_KEM_768_encapsulation_key",
+    "integration_tests_completed": true,
+    "known_answer_tests_completed": false,
+    "acvp_validation_completed": false,
+    "key_confirmation_implemented": false,
+    "real_public_key_provisioning_implemented": false,
+    "benchmark_ready": false
+  },
+  "field": {
+    "order": 256,
+    "modulus": "0x11B"
+  },
+  "methods": [
+    "native",
+    "replication",
+    "rs_3_5",
+    "shamir_3_5",
+    "gatl_uniform_3_5",
+    "gatl_gateway",
+    "rs_2_5_gateway_check"
+  ],
+  "profiles": {
+    "registry": "artifacts/policy_registry.json",
+    "validation_completed": true,
+    "registry_sha256": "1dc6c3fbbf264e1f7a9ffc0532b7d86cf2f2b182c47db9eb65e9bbe281425102"
+  },
+  "authentication": {
+    "algorithm": "HMAC-SHA256",
+    "tag_bytes": 32,
+    "key_provisioning": null,
+    "session_state_implementation": "bounded_RAM_RLock_new_key_and_epoch_after_state_loss",
+    "source": "src/gatl_authenticated.py",
+    "source_sha256": "e52b65dd3a6cdfadff9b3d645de681df8043599f56ecd1646c7d848b05066b56",
+    "registry": "artifacts/authenticated_registry.json",
+    "registry_sha256": "7e7e4294c75853f9e4eff0fbd5d0cc429988f4a1cbeba84949c9183d199c03ef",
+    "test_provisioning": "fresh_independent_key_shared_in_process",
+    "real_key_provisioning_implemented": false,
+    "authenticated_control_implemented": false,
+    "max_packet_bytes": 4096,
+    "max_sessions_per_epoch": 256
+  },
+  "network": {
+    "reference_loss_rate": 0.2,
+    "model": null,
+    "loss_grid": null,
+    "shared_risk_groups": null,
+    "mtu_bytes": null,
+    "deadline_ms": null,
+    "retry_policy": null
+  },
+  "experiments": {
+    "channel_seed": 2026,
+    "method_order_seed": 2027,
+    "cryptographic_randomness": "system_csprng_unseeded",
+    "latency_trials": null,
+    "warmup_trials": null,
+    "loss_trials": null,
+    "independent_runs": null,
+    "cache_mode": null
+  },
+  "wire_format": {
+    "serialization": "13_length_prefixed_fields_u32be_then_32byte_HMAC",
+    "header_bytes": null,
+    "header_size_rule": "52 + sum(non_payload_field_lengths)",
+    "header_size_is_context_dependent": true
+  },
+  "sharing": {
+    "implementation": "reference_python_lsss",
+    "source": "src/gatl_sharing.py",
+    "source_sha256": "98a6158c9c6666bf229455dcda7ab80ca5e02568ba827629f4166b773eb12b34",
+    "randomness": "secrets.token_bytes",
+    "payload_order": "row_index_then_byte_index",
+    "codec_cache_mode": "none",
+    "raw_payload_tests_completed": true,
+    "provides_authentication": false
+  },
+  "baselines": {
+    "source": "src/gatl_baselines.py",
+    "source_sha256": "ae3493d2fb2800e5fa1ef1ea7f87073388928e8b5645bc24951f990df6e30bcf",
+    "implementation": "reference_python_shared_GF256",
+    "rs_encoding": "systematic_Vandermonde_GF256_0x11B_points_1_to_5",
+    "rs_wire_standard_compliance_claimed": false,
+    "shamir_encoding": "same_matrix_encoder_as_GATL_uniform",
+    "shamir_decoding": "Lagrange_weights_once_per_call_not_per_byte",
+    "decoder_cache": "none",
+    "constructor_precomputation": true,
+    "raw_correctness_tests_completed": true,
+    "performance_validation_completed": false
+  },
+  "trace_design": {
+    "source": "src/gatl_traces.py",
+    "source_sha256": "135cdb409a382eceb882568a214dd5c48f03c04fef1418e38ba6adbd62a18255",
+    "plan": "artifacts/experiment_plan_cell8.json",
+    "plan_sha256": "2d78b9e16dcd5f987e109ea53ba3b518db02ca7bb0dcabd29e82b0edacd1e8a6",
+    "pilot_trace_manifest": "artifacts/pilot_trace_manifest.json",
+    "pilot_trace_manifest_sha256": "851460fc091e59c81f668df127166a633759434501a8e311dcbf38f174f0e18d",
+    "pilot_trace": "artifacts/pilot_channel_traces.csv",
+    "pilot_trace_sha256": "570705b4283a7ed79b010adbacffd19d46925429e179e74a2fc0cfbf53019207",
+    "tests_completed": true,
+    "runner_implemented": true,
+    "final_sample_sizes_selected": false
+  },
+  "runner": {
+    "source": "src/gatl_runner_6b9722ebe6f5552d.py",
+    "source_sha256": "6b9722ebe6f5552dd63bb85ca1f3d6f3e1814ead819e90c757cd3cbec477b69b",
+    "protocol": "raw/pilot_96e3d93564d5473ca86c77d58fb40642/pilot_protocol.json",
+    "protocol_sha256": "337d87ddd25106ef22e98faf51fea4badb6b49094844195a4d4869954d8145ad",
+    "tests_completed": true
+  },
+  "pilot": {
+    "directory": "raw/pilot_96e3d93564d5473ca86c77d58fb40642",
+    "completed": true,
+    "manifest": "raw/pilot_96e3d93564d5473ca86c77d58fb40642/pilot_manifest.json",
+    "manifest_sha256": "54c209d385045641c1907da9d0b258f7c3cf9bc84e44898fe92fffb23302a520",
+    "summary": "raw/pilot_96e3d93564d5473ca86c77d58fb40642/pilot_summary.json",
+    "summary_sha256": "e1a2be470addbdadc690e9085eaf8f2985850c4b61b2d4a5d01196e5c0e6f859",
+    "proposal": "raw/pilot_96e3d93564d5473ca86c77d58fb40642/sampling_proposal.json",
+    "proposal_sha256": "71a6a6983ab81ce99d3418948f2b90c01e5583fc6438eda1f9f46defb24e9360",
+    "use_as_final_results": false
+  }
+}

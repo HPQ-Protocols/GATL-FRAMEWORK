@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "draft_not_ready_for_benchmark",
+  "kem": {
+    "algorithm": "ML-KEM-768",
+    "ciphertext_bytes": 1088,
+    "backend": null,
+    "measurement_mode": null,
+    "allow_fake_kem_fallback": false
+  },
+  "field": {
+    "order": 256,
+    "modulus": "0x11B"
+  },
+  "methods": [
+    "native",
+    "replication",
+    "rs_3_5",
+    "shamir_3_5",
+    "gatl_uniform_3_5",
+    "gatl_gateway",
+    "rs_2_5_gateway_check"
+  ],
+  "profiles": {
+    "registry": "artifacts/policy_registry.json",
+    "validation_completed": true,
+    "registry_sha256": "1dc6c3fbbf264e1f7a9ffc0532b7d86cf2f2b182c47db9eb65e9bbe281425102"
+  },
+  "authentication": {
+    "algorithm": "HMAC-SHA256",
+    "tag_bytes": 32,
+    "key_provisioning": null,
+    "session_state_implementation": "bounded_RAM_RLock_new_key_and_epoch_after_state_loss",
+    "source": "src/gatl_authenticated.py",
+    "source_sha256": "e52b65dd3a6cdfadff9b3d645de681df8043599f56ecd1646c7d848b05066b56",
+    "registry": "artifacts/authenticated_registry.json",
+    "registry_sha256": "7e7e4294c75853f9e4eff0fbd5d0cc429988f4a1cbeba84949c9183d199c03ef",
+    "test_provisioning": "fresh_independent_key_shared_in_process",
+    "real_key_provisioning_implemented": false,
+    "authenticated_control_implemented": false,
+    "max_packet_bytes": 4096,
+    "max_sessions_per_epoch": 256
+  },
+  "network": {
+    "reference_loss_rate": 0.2,
+    "model": null,
+    "loss_grid": null,
+    "shared_risk_groups": null,
+    "mtu_bytes": null,
+    "deadline_ms": null,
+    "retry_policy": null
+  },
+  "experiments": {
+    "channel_seed": 2026,
+    "method_order_seed": 2027,
+    "cryptographic_randomness": "system_csprng_unseeded",
+    "latency_trials": null,
+    "warmup_trials": null,
+    "loss_trials": null,
+    "independent_runs": null,
+    "cache_mode": null
+  },
+  "wire_format": {
+    "serialization": "13_length_prefixed_fields_u32be_then_32byte_HMAC",
+    "header_bytes": null,
+    "header_size_rule": "52 + sum(non_payload_field_lengths)",
+    "header_size_is_context_dependent": true
+  },
+  "sharing": {
+    "implementation": "reference_python_lsss",
+    "source": "src/gatl_sharing.py",
+    "source_sha256": "98a6158c9c6666bf229455dcda7ab80ca5e02568ba827629f4166b773eb12b34",
+    "randomness": "secrets.token_bytes",
+    "payload_order": "row_index_then_byte_index",
+    "codec_cache_mode": "none",
+    "raw_payload_tests_completed": true,
+    "provides_authentication": false
+  },
+  "baselines": {
+    "source": "src/gatl_baselines.py",
+    "source_sha256": "ae3493d2fb2800e5fa1ef1ea7f87073388928e8b5645bc24951f990df6e30bcf",
+    "implementation": "reference_python_shared_GF256",
+    "rs_encoding": "systematic_Vandermonde_GF256_0x11B_points_1_to_5",
+    "rs_wire_standard_compliance_claimed": false,
+    "shamir_encoding": "same_matrix_encoder_as_GATL_uniform",
+    "shamir_decoding": "Lagrange_weights_once_per_call_not_per_byte",
+    "decoder_cache": "none",
+    "constructor_precomputation": true,
+    "raw_correctness_tests_completed": true,
+    "performance_validation_completed": false
+  }
+}

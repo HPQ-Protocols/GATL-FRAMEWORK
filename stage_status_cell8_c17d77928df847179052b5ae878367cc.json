@@ -1,0 +1,11 @@
+{
+  "bootstrap": true,
+  "finite_field_tests": true,
+  "profile_tests": true,
+  "baseline_tests": true,
+  "authentication_tests": true,
+  "mlkem_tests": true,
+  "benchmark_completed": false,
+  "payload_tests": true,
+  "trace_design_tests": true
+}

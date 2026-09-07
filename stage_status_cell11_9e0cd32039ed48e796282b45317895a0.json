@@ -1,0 +1,14 @@
+{
+  "bootstrap": true,
+  "finite_field_tests": true,
+  "profile_tests": true,
+  "baseline_tests": true,
+  "authentication_tests": true,
+  "mlkem_tests": true,
+  "benchmark_completed": true,
+  "payload_tests": true,
+  "trace_design_tests": true,
+  "runner_tests": true,
+  "pilot_completed": true,
+  "statistics_completed": true
+}
